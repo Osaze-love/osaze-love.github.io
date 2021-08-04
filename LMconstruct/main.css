@@ -1,0 +1,74 @@
+body{
+   scroll-behavior: smooth; 
+}
+
+.navbar{
+    font-family: 'Raleway';
+
+}
+.home_section{
+   
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Raleway';
+}
+
+.home_text{
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 14px;
+    z-index: 1;
+    
+}
+.home_video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.about-us{
+    font-family: 'Raleway';
+}
+.services{
+    font-family: 'Raleway';
+}
+
+.blog{
+    font-family: 'Raleway';
+}
+
+.jobs_done{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/Backgroundlm.jpg);
+    font-family: 'Raleway';
+}
+.contact{
+    font-family: 'Raleway';
+}
+ .people{
+     font-family: 'Raleway';
+ }
+
+.company{
+    font-family: 'Raleway';
+}
+
+.work_flow{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(img/abstract-21901_1280.jpg) no-repeat center center/cover ;
+    font-family: 'Raleway';
+}
+
+
+
+
+
+
+
+
