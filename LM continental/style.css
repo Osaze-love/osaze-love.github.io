@@ -1,0 +1,56 @@
+body{
+    font-family: 'Raleway';
+    background: black;
+    
+}
+
+.home{
+   height: 100vh;
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/hotel-hall-211911_1280.jpg) no-repeat center center/ cover;
+}
+.home_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100%;
+}
+.Welcome{
+    background: black;
+}
+
+.last_home{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mayor-917149_1280.jpg) no-repeat center center/ cover;
+}
+
+.last_home_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.accordion .accordion-button {
+    background-color:black;
+}
+
+@media (max-width: 7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
