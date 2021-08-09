@@ -21,12 +21,12 @@ yl.from(".about_text", {y:300, opacity:0, duration: 1.4}, "-=1.2")
 let wl = gsap.timeline({
     scrollTrigger: {
         trigger: '.works',
-        start: 'center bottom'
+        
         }
 });
 
-wl.from(".work_images", { y: 200, opacity: 0, duration: 1.4 })
-wl.from(".work3", {x:300, opacity:0, duration: 1.4}, "-=1.2")
+wl.from(".work_images", {x:100, opacity: 0, duration: 3})
+wl.from(".work3", { opacity:0, duration: 3}, "-=3")
 
 let rl = gsap.timeline({
     scrollTrigger: {
