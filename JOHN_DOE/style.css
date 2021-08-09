@@ -662,7 +662,9 @@ footer ul li img{
         
         filter: invert(1);
     }
-    
+    .message_text{
+        font-size: 1.6em;
+    }
 
     .messagebtn{
         display: inline-block;
