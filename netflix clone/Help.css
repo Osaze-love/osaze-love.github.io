@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+nav img {
+  width: 140px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+nav a {
+  color: #e50914;
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(images/bghelp.jpg) no-repeat center center/ cover;
+  height: 130vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 440px;
+  padding: 40px;
+  background-color: #f3f3f3;
+}
+form h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+form p {
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+.inputt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.inputt label {
+  margin-left: 4px;
+}
+form input[type="text"] {
+  background-color: white;
+  color: #8c8c8c;
+  border: 1px solid #8c8c8c;
+  padding: 10px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+form button {
+  background-color: #0080ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.p1 {
+  color: #0080ff;
+}
+.afterform {
+  padding: 10px;
+  width: 440px;
+  margin: auto;
+  color: #8c8c8c;
+}
+.afterform a {
+  color: #8c8c8c;
+}
+footer {
+  margin-top: 100px;
+  padding: 50px 170px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.questions {
+  color: #8c8c8c;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.questionsection li {
+  list-style: none;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.questionsection {
+  display: flex;
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: white;
+    height: 130vh;
+  }
+  form {
+    margin: auto;
+    display: flex;
+    padding: 70px;
+    flex-direction: column;
+    color: black;
+    width: 100%;
+
+    border-radius: 4px;
+  }
+  .afterform {
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;
+    background-color: #f3f3f3;
+    color: black;
+    padding: 10px 70px;
+  }
+  .afterform a {
+    color: black;
+  }
+  footer {
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}

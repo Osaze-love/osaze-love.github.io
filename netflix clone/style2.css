@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+nav img {
+  width: 170px;
+  display: flex;
+  justify-content: flex-start;
+}
+nav {
+  padding: 10px 40px;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/signinimg.jpg) no-repeat center center/ cover;
+  height: 155vh;
+}
+form {
+  margin: auto;
+  display: flex;
+  padding: 70px;
+  flex-direction: column;
+  color: white;
+  width: 440px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+}
+form h2 {
+  font-weight: bold;
+  padding: 20px 0;
+}
+form input[type="text"] {
+  height: 60px;
+  margin: 10px 0 20px 0;
+  border: none;
+  padding: 10px;
+  background-color: #333;
+  color: #8c8c8c;
+  border-radius: 4px;
+}
+form button {
+  background-color: #e50914;
+  padding: 10px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.remember {
+  display: flex;
+  color: #8c8c8c;
+  font-size: 13px;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.remember a {
+  color: #8c8c8c;
+}
+.remember li {
+  list-style: none;
+}
+.remember1 {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.fa-facebook-square {
+  color: #8c8c8c;
+  font-size: 20px;
+}
+.facebook {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.facebook span {
+  font-size: 13px;
+  color: #8c8c8c;
+  margin-left: 3px;
+}
+.new {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+.new span a {
+  color: white;
+  text-decoration: none;
+}
+.new p {
+  margin-right: 4px;
+  color: #8c8c8c;
+}
+.p2 {
+  font-size: 13px;
+}
+.p2 span {
+  color: #8c8c8c;
+}
+.p2 a {
+  text-decoration: none;
+}
+footer {
+  margin-top: 100px;
+  padding: 50px 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.questions {
+  color: #8c8c8c;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.questionsection li {
+  list-style: none;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.questionsection {
+  display: flex;
+  color: #8c8c8c;
+  font-size: 13px;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background: black;
+    height: 130vh;
+  }
+  form {
+    margin: auto;
+    display: flex;
+    padding: 70px;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    background-color: black;
+    border-radius: 4px;
+    border-bottom: 1px solid white;
+  }
+}
