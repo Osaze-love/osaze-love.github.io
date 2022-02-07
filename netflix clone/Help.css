@@ -104,10 +104,16 @@ footer {
     background: white;
     height: 130vh;
   }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
   form {
     margin: auto;
     display: flex;
-    padding: 70px;
+    padding: 20px;
     flex-direction: column;
     color: black;
     width: 100%;
@@ -120,13 +126,31 @@ footer {
     margin: auto;
     background-color: #f3f3f3;
     color: black;
-    padding: 10px 70px;
+    padding: 10px 20px;
   }
   .afterform a {
     color: black;
   }
   footer {
-    padding: 20px 30px;
+    margin-top: 100px;
+    padding: 20px 20px;
     background-color: rgba(0, 0, 0, 0.75);
+  }
+  .questions {
+    color: #8c8c8c;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .questionsection li {
+    list-style: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+
+  .questionsection {
+    display: flex;
+    flex-direction: column;
+    color: #8c8c8c;
+    font-size: 13px;
   }
 }
