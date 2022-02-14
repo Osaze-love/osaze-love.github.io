@@ -4,4 +4,4 @@ let tl = gsap.timeline({
   },
 });
 
-tl.from(".bannerMessage", { y: 300, opacity: 0, duration: 5 });
+tl.from(".bannerMessage", { y: 300, opacity: 0, duration: 4 });

@@ -12,6 +12,11 @@ const Navul = document.querySelector(".navUl");
 
 hamburger.addEventListener("click", () => {
   Navul.classList.toggle("show");
+  if (Navul.classList.contains("show")) {
+    hamburger.src = "images/close.png";
+  } else {
+    hamburger.src = "images/hamburger.png";
+  }
 });
 
 document.querySelectorAll(".nav-link").forEach((n) =>
