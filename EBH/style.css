@@ -24,16 +24,7 @@
     opacity: 1;
   }
 }
-.mode {
-  position: fixed;
-  width: 40px;
-  z-index: 4;
-  cursor: pointer;
-  background-color: blck;
-  right: 30px;
-  border-radius: 50%;
-  bottom: 130px;
-}
+
 .hamburger {
   transition: 0.3 ease-in-out;
   filter: invert(1);
