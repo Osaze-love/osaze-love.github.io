@@ -198,7 +198,7 @@ nav {
 .build {
   max-width: 90%;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
   background-color: #001d4f;
   text-align: center;
   color: white;
@@ -213,7 +213,6 @@ nav {
   margin-right: 70px;
 }
 .build .cards {
-  padding: 0 30px;
   margin-top: 30px;
   display: flex;
   align-items: center;
@@ -256,7 +255,7 @@ nav {
   font-weight: 700;
 }
 .buildlast {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .buildlast button {
   color: #001d4f;
@@ -506,15 +505,14 @@ button:hover {
     margin-bottom: 30px;
   }
   .build {
-    max-width: 97%;
-    margin: auto;
+    max-width: 100%;
     padding: 10px;
     background-color: #001d4f;
     text-align: center;
     color: white;
   }
   .build h2 {
-    font-size: 22px;
+    font-size: 21px;
     padding-top: 20px;
     padding-bottom: 0px;
     letter-spacing: 1px;
@@ -524,16 +522,15 @@ button:hover {
     margin-right: 30px;
   }
   .build .cards {
-    padding: 0 20px;
     margin-top: 30px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     justify-content: space-between;
   }
   .build .card {
     margin-bottom: 20px;
-    margin-right: 20px;
     position: relative;
     width: 300px;
     height: 340px;
@@ -686,7 +683,7 @@ button:hover {
     padding: 10px 20px;
   }
   .story h2 {
-    font-size: 22px;
+    font-size: 20px;
     color: #00060f;
     font-weight: bold;
     padding: 10px 0;
@@ -697,7 +694,7 @@ button:hover {
     padding: 10px 20px;
   }
   .grow h2 {
-    font-size: 22px;
+    font-size: 20px;
     color: #00060f;
     font-weight: bold;
     padding: 10px 0;
@@ -761,79 +758,6 @@ button:hover {
     margin-right: 20px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-  }
-
-  .build {
-    max-width: 97%;
-    margin: auto;
-    padding: 10px;
-    background-color: #001d4f;
-    text-align: center;
-    color: white;
-  }
-  .build h2 {
-    font-size: 22px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    letter-spacing: 1px;
-  }
-  .build p {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .build .cards {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .build .card {
-    margin-bottom: 20px;
-    position: relative;
-    width: 300px;
-    height: 340px;
-    border: 2px solid white;
-  }
-  .build .card p {
-    font-weight: lighter;
-    padding: 1px 0;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .build .card h3 {
-    background-color: white;
-    color: #001d4f;
-    padding: 10px 0;
-  }
-  .build .card .price {
-    font-size: 19px;
-    font-weight: bold;
-    padding: 10px 0;
-  }
-  .build .card button {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 2px;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #001d4f;
-    border: none;
-    font-weight: 700;
-  }
-  .buildlast {
-    padding: 20px 0;
-  }
-  .buildlast button {
-    color: #001d4f;
-    background: #f58d1c;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px 0;
-    font-weight: bold;
   }
 
   .founder {
