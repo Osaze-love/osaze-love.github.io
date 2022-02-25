@@ -7,11 +7,58 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+nav {
+  z-index: 2;
+  background-color: white;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 180px;
+  object-fit: contain;
+}
+
+.navLinks a {
+  font-weight: 500;
+  margin-right: 20px;
+  text-align: center;
+  color: #000d24;
+  text-decoration: none;
+}
+.navBtn button {
+  padding: 10px 20px;
+  color: #001d4f;
+  border: none;
+  background-color: #ffd700;
+}
+.navBtn a {
+  text-decoration: none;
+}
 .banner {
-  transition: 0.3s ease-in-out;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/ebhimage2.jpg) no-repeat center center/ cover;
+  margin: 40px 0;
+  overflow: hidden;
+  padding: 0px 70px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bannerText {
+  flex: 0.5;
+}
+.bannerText h1 {
+  color: #001d4f;
+  font-size: 30px;
+  font-weight: bold;
+}
+.bannerText p {
+  color: #001d4f;
+}
+.bannerImg {
+  flex: 0.4;
 }
 .contents {
   animation: bodytransition 0.7s ease-in-out;
@@ -27,41 +74,11 @@
 
 .hamburger {
   transition: 0.3 ease-in-out;
-  filter: invert(1);
+  z-index: 2;
   width: 30px;
   display: none;
 }
-nav {
-  position: relative;
-  width: 100%;
-  z-index: 2;
-  background-color: #0c25524d;
-  backdrop-filter: blur(10px);
-  padding: 10px 70px;
-  display: flex;
-  transition: 0.3s ease-in-out;
-  align-items: center;
-  justify-content: space-between;
-}
-.bannerLogo {
-  width: 200px;
-}
-.bannerLogo img {
-  max-width: 100%;
-}
-.banner ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.banner li {
-  list-style: none;
-  margin-right: 15px;
-  color: white;
-}
-.banner a {
-  text-decoration: none;
-}
+
 .navUl {
   position: absolute;
   left: -100%;
@@ -72,7 +89,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  z-index: 2;
+
   display: flex;
 }
 
@@ -94,37 +111,7 @@ nav {
   font-weight: 700;
   background-color: #ffd700;
 }
-.banner button {
-  padding: 10px 20px;
-  color: #001d4f;
-  border: none;
-  font-weight: 700;
-  background-color: #f58d1c;
-}
-.bannerMessage {
-  border-radius: 4px;
-  background-color: rgba(46, 45, 45, 0.2);
-  backdrop-filter: blur(10px);
-  display: flex;
-  width: 50%;
-  margin: 10px 70px;
-  padding: 20px;
-  top: -40%;
-  transform: translateY(40%);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.bannerMessage h2 {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: white;
-}
-.bannerMessage p {
-  color: rgb(209, 207, 207);
-  font-weight: lighter;
-}
+
 .story {
   padding: 30px 70px;
 }
@@ -137,7 +124,7 @@ nav {
   padding: 30px 70px;
 }
 .grow h2 {
-  color: #00060f;
+  color: #001d4f;
   font-weight: bold;
   padding: 10px 0;
 }
@@ -148,16 +135,10 @@ nav {
   justify-content: space-between;
 }
 .growfunctions h3 {
+  color: #001d4f;
   font-size: 17px;
 }
-.growfunctions .fa-solid {
-  font-size: 40px;
-  color: #001d4f;
-}
-.growfunctions .fa-regular {
-  font-size: 40px;
-  color: #001d4f;
-}
+
 .growfunctions p {
   font-size: 14px;
 }
@@ -177,6 +158,7 @@ nav {
 }
 
 .testimonials {
+  color: #001d4f;
   padding: 40px 70px;
 }
 .testimonials .cards {
@@ -188,7 +170,7 @@ nav {
 }
 
 .testimonials .card {
-  margin: 20px 0;
+  margin: 10px 0;
 
   padding: 20px;
   min-width: 400px;
@@ -198,11 +180,12 @@ nav {
 }
 
 .build {
-  max-width: 90%;
-  margin: auto;
-  padding: 20px;
+  margin: 0px 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: #001d4f;
-  text-align: center;
+  justify-content: center;
   color: white;
 }
 .build h2 {
@@ -211,71 +194,76 @@ nav {
   letter-spacing: 1px;
 }
 .build p {
-  margin-left: 70px;
-  margin-right: 70px;
+  text-align: center;
+  padding-top: 8px;
+  margin-left: 140px;
+  margin-right: 140px;
 }
-.build .cards {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.build .card {
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
-  position: relative;
-  width: 350px;
-  height: 340px;
-  border: 2px solid white;
-}
-.build .card p {
-  font-weight: lighter;
-  padding: 1px 0;
-  font-size: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.build .card h3 {
-  background-color: white;
-  color: #001d4f;
-  padding: 10px 0;
-}
-.build .card .price {
-  font-size: 19px;
-  font-weight: bold;
-  padding: 10px 0;
-}
-.build .card button {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 2px;
-  text-decoration: none;
-  padding: 10px 20px;
-  color: #001d4f;
-  border: none;
-  font-weight: 700;
-}
+
 .buildlast {
-  padding: 40px 0;
+  padding: 10px 0;
 }
 .buildlast button {
   color: #001d4f;
-  background: #f58d1c;
+  background: #ffd700;
   border: none;
   padding: 10px 20px;
   margin: 10px 0;
   font-weight: bold;
 }
+
+.plansCards {
+  padding: 40px 70px;
+  display: flex;
+  justify-content: space-between;
+
+  color: #001d4f;
+}
+.plansCards .card {
+  flex: 0.3;
+  padding: 20px;
+}
+.plansCards .card:hover {
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #001d4f;
+  border: 1px solid #001d4f;
+  transition: 0.3s ease-in-out;
+}
+.plansCards .card h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.plansCards .card h1 {
+  padding: 10px 0;
+}
+.initial p {
+  font-size: 16px;
+}
+.finalp p {
+  font-size: 16px;
+  padding: 10px 0;
+}
+.card button {
+  background: none;
+
+  border: 1px solid #001d4f;
+  padding: 10px 20px;
+}
+.lastp {
+  font-size: 16px;
+  padding-top: 20px;
+}
+
 .founder {
   padding: 70px;
 }
 
 .founder h2 {
-  color: #00060f;
+  color: #001d4f;
 }
 .founder2 {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -287,6 +275,7 @@ nav {
   height: 370px;
 }
 .founder2 p {
+  color: #001d4f;
   width: 70%;
 }
 
@@ -298,6 +287,7 @@ button:hover {
   letter-spacing: 1.2px;
 }
 .footersection {
+  color: #001d4f;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -308,6 +298,7 @@ button:hover {
   width: 140px;
 }
 .footer .rights {
+  color: #001d4f;
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
@@ -324,24 +315,9 @@ button:hover {
 }
 .footer2link {
   text-decoration: none;
-}
-.spinner-1:before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  margin-top: -30px;
-  margin-left: -30px;
-  border-radius: 50%;
-  border: 3px solid lightgray;
-  border-top-color: coral;
-  animation: spinner 0.7s linear infinite;
+  color: #001d4f;
 }
 
-/* Spinner 2 */
 .spinner-2:before {
   content: "";
   box-sizing: border-box;
@@ -355,25 +331,8 @@ button:hover {
   border-radius: 50%;
   border: 2px solid transparent;
   border-top-color: #001d4f;
-  border-bottom-color: #f58d1c;
+  border-bottom-color: #ffd700;
   animation: spinner 0.7s ease infinite;
-}
-
-/* Spinner 3 */
-.spinner-3:before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  margin-top: -30px;
-  margin-left: -30px;
-  border-radius: 50%;
-  border-top: 2px solid coral;
-  border-right: 2px solid transparent;
-  animation: spinner 0.7s linear infinite;
 }
 
 @keyframes spinner {
@@ -386,35 +345,36 @@ button:hover {
     height: 80vh;
   }
   nav {
-    background-color: rgba(12, 37, 82, 0.3);
-    backdrop-filter: blur(10px);
-    padding: 10px 30px;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    padding: 20px 50px;
     display: flex;
-    transition: 0.3s ease-in-out;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+  }
+  nav img {
+    width: 180px;
+    object-fit: contain;
   }
 
+  .navLinks a {
+    display: none;
+  }
+  .navBtn button {
+    display: none;
+  }
+  .navBtn a {
+    text-decoration: none;
+  }
   .hamburger {
-    filter: invert(1);
+    z-index: 100;
     width: 30px;
-    height: 27px;
     transition: 0.3s ease-in-out;
     display: block;
     cursor: pointer;
   }
-  .banner ul {
-    display: none;
-  }
-  .nav-link {
-    transition: 0.3s ease-in-out;
-  }
-  .nav-link:hover {
-    color: #f58d1c;
-  }
-  .nav-link.btn:hover {
-    color: #001d4f;
-  }
+
   .navUl {
     transition: 0.3s;
   }
@@ -449,47 +409,49 @@ button:hover {
     color: #001d4f;
     border: none;
     font-weight: 700;
-    background-color: #f58d1c;
+    background-color: #ffd700;
   }
-  .bannerLogo {
-    width: 140px;
-  }
-  .bannerLogo img {
-    max-width: 100%;
-  }
-  .bannerMessage {
-    border-radius: 4px;
-    background-color: rgba(46, 45, 45, 0.2);
-    backdrop-filter: blur(2px);
+  .banner {
+    padding: 0 140px;
+    margin: 40px 0;
+    height: max-content;
     display: flex;
-    width: 100%;
-    margin: 10px 10px;
-    padding: 20px;
-    top: -100%;
-    text-align: center;
-    transform: translateY(100%);
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
-  .bannerMessage h2 {
-    font-size: 30px;
+  .bannerText {
+    flex: 1;
+  }
+  .bannerText h1 {
+    color: #001d4f;
+    text-align: center;
+    font-size: 27px;
     font-weight: bold;
-    letter-spacing: 1px;
-    color: white;
   }
-  .bannerMessage p {
-    font-size: 20px;
-    color: rgb(209, 207, 207);
-    font-weight: lighter;
+  .bannerText p {
+    text-align: center;
+    color: #001d4f;
   }
+  .bannerImg {
+    margin: 0 0;
+
+    padding: 20px 0;
+    flex: 0.8;
+    object-fit: contain;
+  }
+  .bannerImg img {
+    height: 500px;
+  }
+
   .grow {
     padding: 10px 70px;
+    color: #001d4f;
   }
   .grow h2 {
     text-align: center;
     font-size: 22px;
-    color: #00060f;
+    color: #001d4f;
     font-weight: bold;
     padding: 10px 0;
   }
@@ -501,7 +463,7 @@ button:hover {
     padding: 20px 0;
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
@@ -509,10 +471,12 @@ button:hover {
     margin-bottom: 30px;
   }
   .build {
-    max-width: 100%;
-    padding: 10px;
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #001d4f;
-    text-align: center;
+    justify-content: center;
     color: white;
   }
   .build h2 {
@@ -525,60 +489,82 @@ button:hover {
     margin-left: 30px;
     margin-right: 30px;
   }
-  .build .cards {
-    margin-top: 30px;
-    display: flex;
+  .plansCards {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 40px 20px;
+    display: flex;
     justify-content: space-between;
-  }
-  .build .card {
-    margin-bottom: 20px;
-    position: relative;
-    width: 300px;
-    height: 340px;
-    border: 2px solid white;
-  }
-  .build .card p {
-    font-weight: lighter;
-    padding: 1px 0;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .build .card h3 {
-    background-color: white;
+
     color: #001d4f;
-    padding: 10px 0;
   }
-  .build .card .price {
-    font-size: 19px;
-    font-weight: bold;
-    padding: 10px 0;
+  .plansCards .card {
+    padding: 20px;
+    box-shadow: 1px 1px 2px #001d4f;
+    margin-bottom: 10px;
+    border: 1px solid #001d4f;
   }
-  .build .card button {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 2px;
-    text-decoration: none;
+
+  .plansCards .card h3 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .plansCards .card h1 {
+    font-size: 21px;
+    padding: 8px 0;
+  }
+  .initial p {
+    font-size: 14px;
+  }
+  .finalp p {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  .plansCards .card button {
+    background: none;
+
+    border: 1px solid #001d4f;
     padding: 10px 20px;
-    color: #001d4f;
-    border: none;
-    font-weight: 700;
   }
+  .lastp {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
   .buildlast {
     padding: 20px 0;
   }
   .buildlast button {
     color: #001d4f;
-    background: #f58d1c;
+    background: #ffd700;
     border: none;
     padding: 10px 20px;
     margin: 10px 0;
     font-weight: bold;
+  }
+  .founder {
+    padding: 30px;
+  }
+
+  .founder h2 {
+    text-align: center;
+    color: #001d4f;
+  }
+  .founder2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .founder2 img {
+    object-fit: cover;
+    margin-right: 20px;
+    height: 370px;
+  }
+  .founder2 p {
+    margin-top: 20px;
+    color: #001d4f;
+    width: 80%;
   }
 }
 
@@ -587,33 +573,36 @@ button:hover {
     height: 80vh;
   }
   nav {
-    background-color: rgba(12, 37, 82, 0.3);
-    backdrop-filter: blur(10px);
-    padding: 10px 30px;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    padding: 20px 30px;
     display: flex;
-    transition: 0.3s ease-in-out;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+  }
+  nav img {
+    width: 180px;
+    object-fit: contain;
+  }
+
+  .navLinks a {
+    display: none;
+  }
+  .navBtn button {
+    display: none;
+  }
+  .navBtn a {
+    text-decoration: none;
   }
   .hamburger {
-    filter: invert(1);
+    z-index: 100;
     width: 30px;
     transition: 0.3s ease-in-out;
     display: block;
     cursor: pointer;
   }
-  .banner ul {
-    display: none;
-  }
-  .nav-link {
-    transition: 0.3s ease-in-out;
-  }
-  .nav-link:hover {
-    color: #f58d1c;
-  }
-  .nav-link.btn:hover {
-    color: #001d4f;
-  }
+
   .navUl {
     transition: 0.3s;
   }
@@ -648,58 +637,49 @@ button:hover {
     color: #001d4f;
     border: none;
     font-weight: 700;
-    background-color: #f58d1c;
+    background-color: #ffd700;
   }
-  .bannerLogo {
-    width: 140px;
-  }
-  .bannerLogo img {
-    max-width: 100%;
-  }
-  .bannerMessage {
-    border-radius: 4px;
-    background-color: rgba(46, 45, 45, 0.2);
-    backdrop-filter: blur(2px);
+  .banner {
+    padding: 0 30px;
+    margin: 40px 0;
+    height: max-content;
     display: flex;
-    width: 95%;
-    margin: 10px 10px;
-    padding: 20px;
-    top: -40%;
-    text-align: center;
-    transform: translateY(40%);
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
-  .bannerMessage h2 {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: white;
+  .bannerText {
+    flex: 1;
   }
-  .bannerMessage p {
-    font-size: 15px;
-    color: rgb(209, 207, 207);
-    font-weight: lighter;
-  }
-  .story {
+  .bannerText h1 {
+    color: #001d4f;
     text-align: center;
-    padding: 10px 20px;
-  }
-  .story h2 {
-    font-size: 20px;
-    color: #00060f;
+    font-size: 27px;
     font-weight: bold;
-    padding: 10px 0;
+  }
+  .bannerText p {
+    text-align: center;
+    color: #001d4f;
+  }
+  .bannerImg {
+    margin: 0 30px;
+
+    padding: 20px 30px;
+    flex: 0.8;
+    object-fit: contain;
+  }
+  .bannerImg img {
+    height: 400px;
   }
 
   .grow {
+    color: #001d4f;
     text-align: center;
     padding: 10px 20px;
   }
   .grow h2 {
-    font-size: 20px;
-    color: #00060f;
+    font-size: 22px;
+    color: #001d4f;
     font-weight: bold;
     padding: 10px 0;
   }
@@ -710,6 +690,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
   }
+
   .growfunctions h3 {
     font-size: 16px;
   }
@@ -719,6 +700,7 @@ button:hover {
   }
   .growfunctions .fa-regular {
     font-size: 40px;
+    padding-bottom: 10px;
     color: #001d4f;
   }
   .growfunctions p {
@@ -763,57 +745,86 @@ button:hover {
     border: 1px solid rgba(0, 0, 0, 0.4);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
   }
-  .build .cards {
-    margin-top: 30px;
+  .build {
+    margin: 0px 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    background-color: #001d4f;
+    justify-content: center;
+    color: white;
+  }
+  .build h2 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    letter-spacing: 1px;
+  }
+  .build p {
     text-align: center;
-    justify-content: space-between;
+    padding-top: 8px;
   }
-  .build .card {
-    margin-bottom: 20px;
-    position: relative;
-    width: 300px;
-    height: 340px;
-    border: 2px solid white;
-  }
-  .build .card p {
-    font-weight: lighter;
-    padding: 1px 0;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .build .card h3 {
-    background-color: white;
-    color: #001d4f;
+
+  .buildlast {
     padding: 10px 0;
   }
-  .build .card .price {
-    font-size: 19px;
-    font-weight: bold;
-    padding: 10px 0;
-  }
-  .build .card button {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 2px;
-    text-decoration: none;
-    padding: 10px 20px;
+  .buildlast button {
     color: #001d4f;
+    background: #ffd700;
     border: none;
-    font-weight: 700;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-weight: bold;
   }
+  .plansCards {
+    flex-direction: column;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    color: #001d4f;
+  }
+  .plansCards .card {
+    flex: 0.3;
+    padding: 20px;
+    box-shadow: 1px 1px 2px #001d4f;
+    margin-bottom: 10px;
+    border: 1px solid #001d4f;
+  }
+
+  .plansCards .card h3 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .plansCards .card h1 {
+    font-size: 21px;
+    padding: 8px 0;
+  }
+  .initial p {
+    font-size: 14px;
+  }
+  .finalp p {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  .plansCards .card button {
+    background: none;
+
+    border: 1px solid #001d4f;
+    padding: 10px 20px;
+  }
+  .lastp {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
   .founder {
     padding: 20px;
     text-align: center;
   }
 
   .founder h2 {
-    color: #00060f;
+    color: #001d4f;
   }
   .founder2 {
     margin-top: 10px;
@@ -822,6 +833,7 @@ button:hover {
     align-items: center;
   }
   .founder2 img {
+    margin: 30px 0;
     object-fit: cover;
     max-width: 400px;
     width: 100%;
@@ -861,31 +873,104 @@ button:hover {
 }
 
 @media screen and (max-width: 380px) {
-  .bannerMessage {
-    border-radius: 4px;
-    background-color: rgba(46, 45, 45, 0.2);
-    backdrop-filter: blur(2px);
-    display: flex;
-    width: 95%;
-    margin: 10px 10px;
-    padding: 20px;
-    top: -40%;
-    text-align: center;
-    transform: translateY(40%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .banner {
+    height: 80vh;
   }
-  .bannerMessage h2 {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
+  nav {
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img {
+    width: 140px;
+    object-fit: contain;
+  }
+
+  .navLinks a {
+    display: none;
+  }
+  .navBtn button {
+    display: none;
+  }
+  .navBtn a {
+    text-decoration: none;
+  }
+  .hamburger {
+    z-index: 100;
+    width: 28px;
+    transition: 0.3s ease-in-out;
+    display: block;
+    cursor: pointer;
+  }
+
+  .navUl {
+    transition: 0.3s;
+  }
+
+  .navUl.show {
+    left: 0%;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    background-color: #001d4f;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+  }
+
+  .navUl li {
+    transition: all 0.3s ease-in-out;
+    list-style: none;
+    margin-right: 15px;
     color: white;
   }
-  .bannerMessage p {
-    font-size: 13px;
-    color: rgb(209, 207, 207);
-    font-weight: lighter;
+  .navUl a {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  .navUl button {
+    display: block;
+    padding: 10px 20px;
+    color: #001d4f;
+    border: none;
+    font-weight: 700;
+    background-color: #ffd700;
+  }
+  .banner {
+    padding: 0 30px;
+    margin: 40px 0;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bannerText {
+    flex: 1;
+  }
+  .bannerText h1 {
+    color: #001d4f;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .bannerText p {
+    font-size: small;
+    text-align: center;
+    color: #001d4f;
+  }
+  .bannerImg {
+    object-fit: contain;
+  }
+  .bannerImg img {
+    height: 280px;
   }
   .build {
     max-width: 94%;
@@ -896,7 +981,7 @@ button:hover {
     color: white;
   }
   .build h2 {
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 20px;
     padding-bottom: 0px;
     letter-spacing: 1px;
@@ -904,49 +989,5 @@ button:hover {
   .build p {
     margin-left: 10px;
     margin-right: 10px;
-  }
-  .build .cards {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-  }
-  .build .card {
-    margin-bottom: 20px;
-    position: relative;
-    width: 300px;
-    height: 340px;
-    border: 2px solid white;
-  }
-  .build .card p {
-    font-weight: lighter;
-    padding: 1px 0;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .build .card h3 {
-    background-color: white;
-    color: #001d4f;
-    padding: 10px 0;
-  }
-  .build .card .price {
-    font-size: 19px;
-    font-weight: bold;
-    padding: 10px 0;
-  }
-  .build .card button {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 2px;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #001d4f;
-    border: none;
-    font-weight: 700;
   }
 }
