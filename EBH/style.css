@@ -171,14 +171,37 @@ nav img {
 
 .testimonials .card {
   margin: 10px 0;
-
+  position: relative;
   padding: 20px;
-  min-width: 400px;
+  min-width: 500px;
+  min-height: 330px;
   margin-right: 20px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
-
+.cardFooter {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cardFooterImg {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.cardFooterImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .build {
   margin: 0px 70px;
   display: flex;
@@ -253,6 +276,32 @@ nav img {
 .lastp {
   font-size: 16px;
   padding-top: 20px;
+}
+.partnerships {
+  color: #001d4f;
+}
+.partnerships .partnerTexts {
+  text-align: center;
+  padding: 0 200px;
+}
+.partnerships .partnerPlans {
+  padding: 30px;
+}
+.partnerships .partnerPlans p {
+  margin: 0.7px 0;
+  border: 1px solid #001d4f;
+  padding: 14px;
+  border-radius: 4px;
+}
+.partnerButton {
+  text-align: center;
+}
+.partnerButton button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #ffd700;
+  border: none;
+  color: #001d4f;
 }
 
 .founder {
@@ -542,29 +591,15 @@ button:hover {
     margin: 10px 0;
     font-weight: bold;
   }
-  .founder {
-    padding: 30px;
+  .partnerships {
+    color: #001d4f;
   }
-
-  .founder h2 {
+  .partnerships .partnerTexts {
     text-align: center;
-    color: #001d4f;
+    padding: 0 100px;
   }
-  .founder2 {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .founder2 img {
-    object-fit: cover;
-    margin-right: 20px;
-    height: 370px;
-  }
-  .founder2 p {
-    margin-top: 20px;
-    color: #001d4f;
-    width: 80%;
+  .partnerships .partnerPlans {
+    padding: 30px;
   }
 }
 
@@ -741,6 +776,7 @@ button:hover {
 
     padding: 20px;
     min-width: 400px;
+    min-height: 370px;
     margin-right: 20px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
@@ -818,32 +854,16 @@ button:hover {
     padding-top: 20px;
   }
 
-  .founder {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .founder h2 {
+  .partnerships {
     color: #001d4f;
   }
-  .founder2 {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .partnerships .partnerTexts {
+    text-align: center;
+    padding: 0 30px;
   }
-  .founder2 img {
-    margin: 30px 0;
-    object-fit: cover;
-    max-width: 400px;
-    width: 100%;
-    margin-right: 20px;
-    height: 400px;
+  .partnerships .partnerPlans {
+    padding: 30px;
   }
-  .founder2 p {
-    width: 100%;
-  }
-
   button {
     transition: 0.3s;
     cursor: pointer;
