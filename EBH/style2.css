@@ -124,6 +124,7 @@ nav img {
   z-index: 2;
 }
 .backStory {
+  overflow-y: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,6 +163,7 @@ nav img {
   flex: 0.3;
 }
 .mission {
+  overflow-y: hidden;
   padding: 30px 70px;
   justify-content: space-between;
   display: flex;
@@ -197,16 +199,19 @@ nav img {
 }
 .focus1 {
   flex: 0.6;
+  overflow-y: hidden;
 }
 .focus2 {
   flex: 0.3;
 }
 .focus1itema {
+  overflow-y: hidden;
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
 }
 .focus1itemb {
+  overflow-y: hidden;
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
@@ -218,6 +223,7 @@ nav img {
   font-size: 18px;
 }
 .focus1item1 {
+  overflow-y: hidden;
   width: 40%;
 }
 .recent {
@@ -225,14 +231,20 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 .recent1 {
+  overflow-y: hidden;
+
   flex: 0.6;
 }
 .recent2 {
+  overflow-y: hidden;
+
   flex: 0.3;
 }
 .recents {
+  overflow-y: hidden;
   padding: 20px 0;
 }
 .founder {
