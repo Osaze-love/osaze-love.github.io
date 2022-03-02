@@ -144,6 +144,7 @@ nav img {
   margin-top: 20px;
 }
 .entrepreneurship {
+  overflow-y: hidden;
   padding: 30px 70px;
   display: flex;
   align-items: center;
