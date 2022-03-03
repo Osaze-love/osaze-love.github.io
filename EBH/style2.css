@@ -626,7 +626,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
     justify-content: space-between;
   }
   .focus1 h2 {
@@ -638,7 +638,7 @@ button:hover {
   .focus1itema {
     padding: 0 0;
     display: flex;
-    text-align: left;
+    text-align: center;
     flex-direction: column;
     justify-content: space-between;
   }

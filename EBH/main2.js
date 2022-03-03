@@ -86,3 +86,11 @@ let yl = gsap.timeline({
 });
 
 yl.from(".recents", { y: 200, opacity: 0, duration: 1, ease: "powerIn" });
+
+let il = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".founder",
+  },
+});
+
+il.from(".founder", { y: 200, opacity: 0, duration: 1, ease: "powerIn" });
