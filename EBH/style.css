@@ -115,6 +115,7 @@ nav img {
 .story {
   padding: 30px 70px;
 }
+
 .story h2 {
   color: #00060f;
   font-weight: bold;
@@ -128,19 +129,22 @@ nav img {
   font-weight: bold;
   padding: 10px 0;
 }
-.growfunctions {
-  padding: 30px 0;
+.growths {
+  color: #001d4f;
+  gap: 30px;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.growfunctions h3 {
-  color: #001d4f;
-  font-size: 17px;
+.growth .texts {
+  width: 700px;
 }
-
-.growfunctions p {
-  font-size: 14px;
+.growth {
+  padding: 30px 0;
+}
+.growth p {
+  width: 70%;
 }
 .achievements {
   display: flex;
@@ -245,6 +249,7 @@ nav img {
 .plansCards .card {
   flex: 0.3;
   padding: 20px;
+  height: max-content;
 }
 .plansCards .card:hover {
   border-radius: 4px;
@@ -302,6 +307,11 @@ nav img {
   background-color: #ffd700;
   border: none;
   color: #001d4f;
+}
+.lastp a {
+  text-decoration: none;
+  color: #001d4f;
+  font-weight: bold;
 }
 
 .founder {
@@ -390,9 +400,6 @@ button:hover {
   }
 }
 @media screen and (max-width: 1200px) {
-  .banner {
-    height: 80vh;
-  }
   nav {
     position: relative;
     z-index: 100;
@@ -461,63 +468,53 @@ button:hover {
     background-color: #ffd700;
   }
   .banner {
-    padding: 0 140px;
     margin: 40px 0;
-    height: max-content;
+    overflow: hidden;
+    padding: 0px 70px;
+    height: 80vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
   .bannerText {
-    flex: 1;
+    flex: 0.5;
   }
   .bannerText h1 {
     color: #001d4f;
-    text-align: center;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bold;
   }
   .bannerText p {
-    text-align: center;
     color: #001d4f;
+    font-size: small;
   }
   .bannerImg {
-    margin: 0 0;
-
-    padding: 20px 0;
-    flex: 0.8;
-    object-fit: contain;
-  }
-  .bannerImg img {
-    height: 500px;
+    overflow-y: hidden;
+    flex: 0.4;
+    height: 60%;
   }
 
   .grow {
-    padding: 10px 70px;
-    color: #001d4f;
+    padding: 30px 70px;
   }
   .grow h2 {
-    text-align: center;
-    font-size: 22px;
     color: #001d4f;
     font-weight: bold;
     padding: 10px 0;
   }
-  .grow p {
-    text-align: center;
-  }
-  .growfunctions {
-    margin-right: 10px;
-    padding: 20px 0;
+  .growths {
+    color: #001d4f;
+    gap: 30px;
+    width: 100%;
     display: flex;
-    text-align: center;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
-  .functions {
-    margin-bottom: 30px;
+  .growth {
+    padding: 30px 0;
+  }
+  .growth p {
+    width: 70%;
   }
   .build {
     margin: 0px 30px;
@@ -708,38 +705,38 @@ button:hover {
   }
 
   .grow {
-    color: #001d4f;
-    text-align: center;
-    padding: 10px 20px;
+    color: #353c49;
+    padding: 10px 40px;
   }
   .grow h2 {
+    text-align: center;
     font-size: 22px;
     color: #001d4f;
     font-weight: bold;
     padding: 10px 0;
   }
-  .growfunctions {
-    padding: 20px 0;
+  .grow p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .growths {
+    color: #001d4f;
+    gap: 10px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
-
-  .growfunctions h3 {
-    font-size: 16px;
+  .growth {
+    text-align: center;
+    padding: 20px 0;
   }
-  .growfunctions .fa-solid {
-    font-size: 40px;
-    color: #001d4f;
+  .growth p {
+    width: 100%;
   }
-  .growfunctions .fa-regular {
-    font-size: 40px;
-    padding-bottom: 10px;
-    color: #001d4f;
-  }
-  .growfunctions p {
-    font-size: 14px;
+  .growth .texts {
+    width: 100%;
   }
   .achievements {
     display: flex;

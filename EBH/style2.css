@@ -429,17 +429,16 @@ button:hover {
   }
   .focus1 {
     flex: 0.8;
+    padding-bottom: 32px;
   }
   .focus2 {
     flex: 0.1;
   }
   .focus1itema {
-    padding: 30px 0;
     display: flex;
     justify-content: space-between;
   }
   .focus1itemb {
-    padding: 30px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -468,7 +467,7 @@ button:hover {
     align-items: center;
   }
   nav img {
-    width: 180px;
+    width: 160px;
     object-fit: contain;
   }
 
@@ -526,15 +525,15 @@ button:hover {
     background-color: #ffd700;
   }
   .about {
-    padding: 20px 20px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .aboutText {
-    text-align: center;
     flex: 0.5;
+    margin-bottom: 20px;
   }
   .aboutText h2 {
     display: inline;
@@ -544,20 +543,20 @@ button:hover {
     margin-top: 20px;
   }
   .aboutImg {
-    width: 90%;
+    width: 100%;
     padding-top: 10px;
   }
 
   .backStory {
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px 30px;
   }
   .backStory .backImg {
     flex: 0.4;
+    display: none;
   }
   .backStory .story {
     margin-top: 10px;
@@ -571,8 +570,7 @@ button:hover {
     margin-top: 20px;
   }
   .entrepreneurship {
-    text-align: center;
-    padding: 20px 20px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -590,21 +588,23 @@ button:hover {
   }
   .entrepreneurImg {
     flex: 0.3;
+    display: none;
   }
   .mission {
-    padding: 20px 20px;
+    padding: 20px 30px;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .mission1 {
-    text-align: center;
+    text-align: left;
     flex: 0.4;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .mission2 {
-    text-align: center;
+    margin-bottom: 30px;
+    text-align: left;
     flex: 0.4;
   }
   .mission1 h2 {
@@ -622,20 +622,23 @@ button:hover {
     margin-top: 10px;
   }
   .focus {
-    padding: 20px 20px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     justify-content: space-between;
   }
+  .focus1 h2 {
+    margin-bottom: 20px;
+  }
   .focus1item1 {
-    padding: 10px 0;
+    padding: 30px 0;
   }
   .focus1itema {
     padding: 0 0;
     display: flex;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -654,13 +657,19 @@ button:hover {
   .focus1item1 {
     width: 100%;
   }
+  .focus2 {
+    display: none;
+  }
   .recent {
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     align-items: center;
     justify-content: space-between;
+  }
+  .recent1 h2 {
+    margin-bottom: 10px;
   }
   .recent1 {
     flex: 0.6;
@@ -668,13 +677,14 @@ button:hover {
   .recent2 {
     flex: 0.3;
     width: 80%;
+    display: none;
   }
   .recents {
     padding: 20px 0;
   }
   .founder {
     padding: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .founder h2 {
@@ -689,10 +699,10 @@ button:hover {
   .founder2 img {
     margin: 30px 0;
     object-fit: cover;
-    max-width: 400px;
+    max-width: 100%;
     width: 100%;
     margin-right: 20px;
-    height: 400px;
+    height: 470px;
   }
   .founder2 p {
     width: 100%;
@@ -708,7 +718,6 @@ button:hover {
   .footer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
   }
   .footersection {
     display: flex;
@@ -720,6 +729,311 @@ button:hover {
     width: 140px;
   }
   .footer .rights {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  nav {
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img {
+    width: 140px;
+    object-fit: contain;
+  }
+
+  .navLinks a {
+    display: none;
+  }
+  .navBtn button {
+    display: none;
+  }
+  .navBtn a {
+    text-decoration: none;
+  }
+  .hamburger {
+    z-index: 100;
+    width: 27px;
+    transition: 0.3s ease-in-out;
+    display: block;
+    cursor: pointer;
+  }
+
+  .navUl {
+    transition: 0.3s;
+  }
+
+  .navUl.show {
+    left: 0%;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    background-color: #001d4f;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+  }
+
+  .navUl li {
+    transition: all 0.3s ease-in-out;
+    list-style: none;
+    margin-right: 15px;
+    color: white;
+  }
+  .navUl a {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  .navUl button {
+    display: block;
+    padding: 10px 20px;
+    color: #001d4f;
+    border: none;
+    font-weight: 700;
+    background-color: #ffd700;
+  }
+  .about {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutText {
+    flex: 0.5;
+    margin-bottom: 20px;
+  }
+  .aboutText h2 {
+    font-size: 20px;
+    display: inline;
+    border-bottom: 4px solid #000d24;
+  }
+  .aboutText p {
+    margin-top: 20px;
+    font-size: small;
+  }
+  .aboutImg {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .backStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  .backStory .backImg {
+    flex: 0.4;
+    display: none;
+  }
+  .backStory .story {
+    margin-top: 10px;
+    flex: 0.4;
+  }
+  .backStory h2 {
+    font-size: 20px;
+    display: inline;
+    border-bottom: 4px solid #000d24;
+  }
+  .backStory p {
+    margin-top: 20px;
+    font-size: small;
+  }
+  .entrepreneurship {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .entrepreneurText {
+    flex: 0.6;
+  }
+  .entrepreneurText h2 {
+    display: inline;
+    font-size: 20px;
+    border-bottom: 4px solid #000d24;
+  }
+  .entrepreneurText p {
+    margin-top: 20px;
+    font-size: small;
+  }
+  .entrepreneurImg {
+    flex: 0.3;
+    display: none;
+  }
+  .mission {
+    padding: 20px 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mission1 {
+    text-align: left;
+    flex: 0.4;
+    margin-bottom: 30px;
+  }
+  .mission2 {
+    margin-bottom: 30px;
+    text-align: left;
+    flex: 0.4;
+  }
+  .mission1 h2 {
+    font-size: 20px;
+    display: inline;
+    border-bottom: 4px solid #000d24;
+  }
+  .mission2 h2 {
+    font-size: 20px;
+    display: inline;
+    border-bottom: 4px solid #000d24;
+  }
+  .mission1 p {
+    margin-top: 10px;
+    font-size: small;
+  }
+  .mission2 p {
+    font-size: small;
+    margin-top: 10px;
+  }
+  .focus {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .focus1 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .focus1item1 {
+    padding: 30px 0;
+  }
+  .focus1itema {
+    padding: 0 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .focus1itemb {
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .focus1 p {
+    font-size: 15px;
+  }
+  .focus1 h3 {
+    font-size: 17px;
+  }
+  .focus1 p {
+    font-size: small;
+  }
+  .focus1item1 {
+    width: 100%;
+  }
+  .focus2 {
+    display: none;
+  }
+  .recent {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .recent1 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .recent1 {
+    flex: 0.6;
+  }
+  .recent1 h3 {
+    font-size: 17px;
+  }
+  .recent1 p {
+    font-size: small;
+  }
+  .recent2 {
+    flex: 0.3;
+    width: 80%;
+    display: none;
+  }
+  .recents {
+    padding: 20px 0;
+  }
+  .founder {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .founder h2 {
+    font-size: 20px;
+    color: #001d4f;
+  }
+  .founder2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .founder2 img {
+    margin: 30px 0;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    margin-right: 20px;
+    height: 470px;
+  }
+  .founder2 p {
+    width: 100%;
+    font-size: small;
+  }
+
+  button {
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  button:hover {
+    letter-spacing: 1.2px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footersection {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 10px;
+  }
+  .footer p {
+    font-size: small;
+  }
+  .footer1 img {
+    width: 130px;
+  }
+  .footer .rights {
+    padding: 0 10px;
     text-align: center;
     align-items: center;
     margin-bottom: 10px;
